@@ -17,7 +17,7 @@
 #define ADS1115_OS_INACTIVE         0x00 << ADS1115_OS_SHIFT
 #define ADS1115_OS_ACTIVE           0x01 << ADS1115_OS_SHIFT
 
-#define ADS1115_CHANNELS_COUNT           8
+#define ADS1115_CHANNELS_COUNT           6
 #define ADS1115_MUX_SHIFT           12
 #define ADS1115_MUX_P0_N1           0x00 << ADS1115_MUX_SHIFT /* default */
 #define ADS1115_MUX_P0_N3           0x01 << ADS1115_MUX_SHIFT
@@ -90,10 +90,9 @@
 #endif
 
 extern const AP_HAL::HAL& hal;
-static const uint16_t mux_table[8] = 
+/* Only two differential channels used */
+static const uint16_t mux_table[ADS1115_CHANNELS_COUNT] = 
 {
-    ADS1115_MUX_P0_N1,
-    ADS1115_MUX_P0_N3,
     ADS1115_MUX_P1_N3,
     ADS1115_MUX_P2_N3,
     ADS1115_MUX_P0_NG,
