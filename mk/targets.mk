@@ -45,6 +45,10 @@ navio: HAL_BOARD = HAL_BOARD_LINUX
 navio: TOOLCHAIN = RPI
 navio: all
 
+navio-odroid-c1: HAL_BOARD = HAL_BOARD_LINUX
+navio-odroid-c1: TOOLCHAIN = ODROID_C1
+navio-odroid-c1: all
+
 empty: HAL_BOARD = HAL_BOARD_EMPTY
 empty: TOOLCHAIN = AVR
 empty: all
