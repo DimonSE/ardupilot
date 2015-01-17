@@ -41,9 +41,9 @@ pxf: HAL_BOARD = HAL_BOARD_LINUX
 pxf: TOOLCHAIN = BBONE
 pxf: all
 
-navio: HAL_BOARD = HAL_BOARD_LINUX
-navio: TOOLCHAIN = RPI
-navio: all
+navio-rpi: HAL_BOARD = HAL_BOARD_LINUX
+navio-rpi: TOOLCHAIN = RPI
+navio-rpi: all
 
 navio-odroid-c1: HAL_BOARD = HAL_BOARD_LINUX
 navio-odroid-c1: TOOLCHAIN = ODROID_C1
